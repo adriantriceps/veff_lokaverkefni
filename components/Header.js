@@ -1,12 +1,14 @@
 var React = require('react');
-var ReactDOM = require('react-dom');
 
+const divStyleBlue = {
+  color: 'blue',
+};
 
 var Header = React.createClass({
   render: function(){
-    return (
+    return(
       <div>
-      <h2>GOGOPowerrangers</h2>
+      <h2 style={divStyleBlue}><center>GOGOPowerrangers</center></h2>
       </div>
     );
 }
