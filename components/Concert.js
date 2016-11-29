@@ -1,6 +1,11 @@
 import React from 'react'
 import $ from 'jquery'
-import { Table , responsive } from 'react-bootstrap'
+import { Table , responsive , Router , Route, Link} from 'react-bootstrap'
+
+var divbil = {
+  color: 'black',
+  height: 100
+};
 
 var Concert = React.createClass({
   getConcertData: function() {
@@ -26,7 +31,7 @@ var Concert = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Listi yfir hlutum</h1>
+        <h2 style={divbil}><center>Listi yfir áhugaverðum atburðum</center></h2>
         {!this.state.concertsData.results ?
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"></img>
           :
